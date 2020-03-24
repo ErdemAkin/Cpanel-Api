@@ -10,8 +10,8 @@ namespace CpanelUapi
     {
         static void Main(string[] args)
         {
-            UApi uapi = new UApi("http://94.199.200.65:2082/execute");
-            uapi.authenticate("alierde1", "Erdem1905+");
+            UApi uapi = new UApi("http://SERVER_IP:2082/execute");
+            uapi.authenticate("USERNAME", "PASSWORD");
 
             UapiFactory factory = new UapiFactory();
             Ftp ftp = (Ftp)factory.CallApi("Ftp");
